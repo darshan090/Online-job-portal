@@ -11,9 +11,10 @@ import Postjob from './pages/post-job'
 import SavedJob from './pages/saved-job'
 import { ThemeProvider } from './components/theme-provider'
 
+
 const router = createBrowserRouter([
   {
-    element:<Applayout />,
+    element:<Applayout />, 
     children:[
       {
         path:'/',
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         element: <Joblisting />
       },
       {
-        path:'/job/:id',
+        path:'/job',
         element: <Job />
       },
       {
